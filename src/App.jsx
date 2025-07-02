@@ -431,9 +431,9 @@ function App() {
                 ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}
                 md:relative md:translate-x-0 md:flex
             `}>
-                <div className="p-6 border-b border-gray-700 flex-shrink-0 text-center">
+                <div className="p-4 border-b border-gray-700 flex-shrink-0 text-center">
                     <div className="flex items-center justify-center">
-                        <h1 className="text-3xl font-bold text-white tracking-tight">EDUNEX</h1>
+                        <img src="images/londonLogo.png" alt="London education logosi" className='p-0'/>
                     </div>
                 </div>
                 <nav className="flex-1 px-3.5 py-5 space-y-2 overflow-y-auto">

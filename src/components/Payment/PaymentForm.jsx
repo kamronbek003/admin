@@ -378,12 +378,7 @@ const PaymentForm = ({ token, initialData, students, studentsLoading, studentsEr
 
   const currentYear = new Date().getUTCFullYear();
   const currentMonthIndex = new Date().getUTCMonth();
-  const availableMonths = Object.entries(ExistMonths).filter(([_, value], index) => {
-    if (parseInt(formData.whichYear) === currentYear) {
-      return index <= currentMonthIndex;
-    }
-    return true;
-  });
+  const availableMonths = Object.entries(ExistMonths);
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6 p-6 sm:p-8 bg-gradient-to-br from-gray-50 to-white shadow-2xl rounded-2xl max-w-2xl mx-auto">

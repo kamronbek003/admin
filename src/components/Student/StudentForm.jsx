@@ -687,7 +687,7 @@ const StudentForm = ({
                             <option value="FRIEND_REFERRAL">
                                 Do'st tavsiyasi
                             </option>
-                            <option value="ADVERTISEMENT">Reklama</option>
+                            <option value="ADVERTISEMENT">Tashqi reklama</option>
                             <option value="OTHER">Boshqa</option>
                         </select>
                     </div>

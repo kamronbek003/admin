@@ -209,7 +209,8 @@ const DebtorStudentsList = ({ token }) => {
                                             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4">
                                                 <div>
                                                     <h2 className="text-xl font-bold text-indigo-700 flex items-center">
-                                                        <User size={24} className="mr-2" />{student.firstName} {student.lastName}
+                                                        <User size={24} className="mr-2" />{student.firstName} {student.lastName}&nbsp;&nbsp;&nbsp; 
+                                                        Telefon: {student.phone}
                                                     </h2>
                                                     <p className="text-sm text-gray-500 ml-8">
                                                         ID: {student.studentId}

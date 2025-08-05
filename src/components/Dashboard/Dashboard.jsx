@@ -139,7 +139,9 @@ const StatCard = ({ title, value, previousValue, icon: Icon, color = 'blue', loa
                     {previousValue !== undefined && typeof numericValue === 'number' && !isNaN(numericValue) && (
                         <div className={`flex items-center text-xs font-medium ${trendColor}`}>
                             {trendIcon}
-                            <span>{percentageChange !== 0 ? `${Math.abs(percentageChange).toFixed(1)}%` : "O'zgarish yo'q"}</span>
+                            <span>
+                                {/* {percentageChange !== 0 ? `${Math.abs(percentageChange).toFixed(1)}%` :  */}
+                                "O'zgarish yo'q"</span>
                             <span className="text-gray-500 ml-1">oldingi davrga nisbatan</span>
                         </div>
                     )}

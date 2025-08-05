@@ -4,7 +4,6 @@ import LoadingSpinner from '../Essential/LoadingSpinner';
 import ErrorMessage from '../Essential/ErrorMessage';
 import { User, DollarSign, Calendar, CheckSquare, AlertTriangle, Percent, X, ChevronLeft, ChevronRight, List } from 'lucide-react';
 
-// Debounce uchun maxsus hook
 function useDebounce(value, delay) {
     const [debouncedValue, setDebouncedValue] = useState(value);
     useEffect(() => {
@@ -14,7 +13,6 @@ function useDebounce(value, delay) {
     return debouncedValue;
 }
 
-// O'zgarmas ma'lumotlar
 const CURRENT_YEAR = new Date().getFullYear();
 const YEARS = [CURRENT_YEAR + 1, CURRENT_YEAR, CURRENT_YEAR - 1, CURRENT_YEAR - 2];
 const MONTHS = [
@@ -24,9 +22,8 @@ const MONTHS = [
     { value: 10, label: 'Oktabr' }, { value: 11, label: 'Noyabr' }, { value: 12, label: 'Dekabr' },
 ];
 
-// Joriy oy va yilni aniqlash
 const now = new Date();
-const currentMonth = now.getMonth() + 1; // getMonth() 0 dan boshlanadi
+const currentMonth = now.getMonth() + 1; 
 const currentYear = now.getFullYear();
 
 const DebtorStudentsList = ({ token }) => {
@@ -40,7 +37,6 @@ const DebtorStudentsList = ({ token }) => {
     const [groups, setGroups] = useState([]);
     const [teachers, setTeachers] = useState([]);
     
-    // Filtr holatini standart qiymatlar bilan boshlash
     const [filters, setFilters] = useState({ 
         name: '', 
         studentId: '', 
